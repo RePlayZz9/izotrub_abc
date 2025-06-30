@@ -33,7 +33,7 @@
   },
   "alias": {
     "@/*": "./src/components/ui/$1"
-  }
+  },
   "scripts": {
   "dev": "vite",
   "build": "vite build",
