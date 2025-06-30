@@ -10,7 +10,7 @@ export const Proto = (): JSX.Element => {
       <div className="bg-white overflow-hidden w-full max-w-[1366px] relative">
         <NavbarSection />
 
-        <div className="relative w-full h-[681px] mt-[87px] overflow-hidden">
+        <div className="relative w-full h-[681px] mt-[87px]  overflow-hidden">
           {/* Background Video */}
           <video
             className="absolute inset-0 w-full h-full object-cover"
@@ -79,7 +79,7 @@ export const Proto = (): JSX.Element => {
 
         <div className="relative mt-[90px] flex flex-row">
           <img
-            className="w-[520px] h-[520px] ml-[75px] object-cover"
+            className="w-full h-[520px] ml-[30px] object-cover"
             alt="Image"
             src="/img/trubi.png"
           />

@@ -201,7 +201,7 @@ export const RequestQuoteSection = (): JSX.Element => {
         <div className="bg-[url(/img/rectangle.png)] py-16">
           <div className="container mx-auto flex flex-col lg:flex-row">
             <div className="lg:w-1/2 relative">
-              <div className="bg-[url(/img/man.png)] bg-cover bg-center h-[716px] relative">
+              <div className="bg-[url(/img/man.png)] bg-cover bg-center h-[716px]">
                 <img
                   className="absolute w-13 h-[76px] bottom-[180px] right-[197px]"
                   alt="Logo"
