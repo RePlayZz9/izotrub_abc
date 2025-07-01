@@ -10,7 +10,7 @@ export const Proto = (): JSX.Element => {
       <div className="bg-white overflow-hidden w-full max-w-[1366px] relative">
         <NavbarSection />
 
-        <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[681px] mt-[60px] sm:mt-[70px] md:mt-[87px] overflow-hidden">
+        <div className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] xl:h-[900px] mt-[60px] sm:mt-[70px] md:mt-[87px] overflow-hidden">
           {/* Background Video */}
           <video
             className="absolute inset-0 w-full h-full object-cover"
@@ -27,27 +27,33 @@ export const Proto = (): JSX.Element => {
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-[#181818a6]" />
 
-          <div className="absolute w-full px-4 sm:px-6 md:px-8 lg:px-[78px] bottom-[80px] sm:bottom-[120px] md:bottom-[184px]">
-            <Button className="w-full sm:w-[265px] h-[45px] sm:h-[50px] bg-[#1d468b] hover:bg-black transition-colors duration-300 rounded-none">
-              <span className="font-['Stem-Bold',Helvetica] font-bold text-white text-sm sm:text-base text-center tracking-[0.64px]">
-                РАСЧЕТ СТОИМОСТИ
-              </span>
-            </Button>
+          {/* Main Title Section - Positioned at top */}
+          <div className="absolute top-[60px] sm:top-[80px] md:top-[100px] lg:top-[120px] left-4 sm:left-6 md:left-8 lg:left-[78px] w-full max-w-[90%] sm:max-w-[85%] md:max-w-[800px] z-20">
+            <div className="flex flex-col space-y-2 sm:space-y-3 md:space-y-4">
+              <h1 className="[font-family:'Stem-Medium',Helvetica] font-medium text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[68px] tracking-[0] leading-tight sm:leading-tight md:leading-tight lg:leading-[64px]">
+                Трубы и фасонные
+              </h1>
+              <h1 className="[font-family:'Stem-Medium',Helvetica] font-medium text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[68px] tracking-[0] leading-tight sm:leading-tight md:leading-tight lg:leading-[64px]">
+                изделия в
+              </h1>
+              <h1 className="[font-family:'Stem-Medium',Helvetica] font-medium text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[74px] tracking-[0] leading-tight sm:leading-tight md:leading-tight lg:leading-[75px]">
+                ППУ-ИЗОЛЯЦИИ
+              </h1>        
+            </div>
           </div>
 
-          <div className="absolute w-full px-4 sm:px-6 md:px-8 lg:px-[78px] bottom-[140px] sm:bottom-[190px] md:bottom-[270px]">
-            <div className="max-w-full lg:max-w-[604px]">
-              <div className="mb-4 sm:mb-6">
-                <div className="font-['Manrope',Helvetica] font-normal text-sm sm:text-base md:text-[17px] tracking-[0] leading-6 sm:leading-7">
-                  <span className="text-[#d5d5d5]">Наша компания занимается </span>
-                  <span className="font-semibold text-white underline">
-                    производством труб{" "}
-                  </span>
-                  <span className="text-[#d5d5d5]">
-                    в пенополиуретановой изоляции в полиэтиленовой (ПЭ) и
-                    оцинкованной оболочке (ОЦ).
-                  </span>
-                </div>
+          {/* Description Text - Positioned in middle */}
+          <div className="absolute w-full px-4 sm:px-6 md:px-8 lg:px-[78px] top-1/2 transform -translate-y-1/2 z-10">
+            <div className="max-w-full lg:max-w-[604px] space-y-4 sm:space-y-6">
+              <div className="font-['Manrope',Helvetica] font-normal text-sm sm:text-base md:text-[17px] tracking-[0] leading-6 sm:leading-7">
+                <span className="text-[#d5d5d5]">Наша компания занимается </span>
+                <span className="font-semibold text-white underline">
+                  производством труб{" "}
+                </span>
+                <span className="text-[#d5d5d5]">
+                  в пенополиуретановой изоляции в полиэтиленовой (ПЭ) и
+                  оцинкованной оболочке (ОЦ).
+                </span>
               </div>
 
               <div className="font-['Manrope',Helvetica] font-normal text-sm sm:text-base md:text-[17px] tracking-[0] leading-6 sm:leading-7">
@@ -62,7 +68,14 @@ export const Proto = (): JSX.Element => {
             </div>
           </div>
 
-          <AdvantagesSection />
+          {/* Button - Positioned at bottom */}
+          <div className="absolute w-full px-4 sm:px-6 md:px-8 lg:px-[78px] bottom-[60px] sm:bottom-[80px] md:bottom-[100px] lg:bottom-[120px] z-10">
+            <Button className="w-full sm:w-[265px] h-[45px] sm:h-[50px] bg-[#1d468b] hover:bg-black transition-colors duration-300 rounded-none">
+              <span className="font-['Stem-Bold',Helvetica] font-bold text-white text-sm sm:text-base text-center tracking-[0.64px]">
+                РАСЧЕТ СТОИМОСТИ
+              </span>
+            </Button>
+          </div>
         </div>
 
         <div className="relative mt-[60px] sm:mt-[70px] md:mt-[90px] flex flex-col lg:flex-row px-4 sm:px-6 md:px-8 lg:px-0">
